@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Philosopher";
+    src: url("font/Philosopher-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Philosopher";
+    src: url("font/Philosopher-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Philosopher";
+    src: url("font/Philosopher-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Philosopher";
+    src: url("font/Philosopher-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  body {
+    font-family: "Philosopher";
+    font-weight: bold;
+    font-style: normal;
+
+  }
+
+ 
+  #titulo-nav{
+    font-family: "Philosopher";
+    font-weight: bold;
+    font-style: normal;
+    font-size: small;
+    margin-left: 3%;
+    position: relative;
+  }
+
+
+#countdown{
+  font-family: "Philosopher";
+    font-weight: normal;
+    font-style: normal;
+    
+}
+  
+#invitacion-texto{
+  font-family: "Philosopher";
+    font-weight: normal;
+    font-style: italic;    
+}
+
+#datos-extra{
+
+  font-family: "Philosopher";
+  font-weight: bold;
+  font-style: normal;
+  font-size: small;
+
+}
+#te-cuento{
+
+  font-family: "Philosopher";
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+#mensaje{
+
+  font-family: "Philosopher";
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+#salon{
+
+  font-family: "Philosopher";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+
+}
+
+#ubicacion{
+
+  font-family: "Philosopher";
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+
+}
+
+
+
+#datos-cuenta{
+
+  font-family: "Philosopher";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+
+}
+

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOREMO XV</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="estilos.css">
+         
+
+
+  <!--Reproductor de Cancion-->
+
+
+        <script>
+            window.onload = function() {
+              var audio = new Audio("media/cancion.mp3");
+              audio.play();
+          
+              var playButton = document.getElementById("play-pause");
+              playButton.addEventListener("click", function() {
+                if (audio.paused) {
+                  audio.play();
+                  playButton.innerHTML = '<i class="fa fa-pause"></i>';
+                } else {
+                  audio.pause();
+                  playButton.innerHTML = '<i class="fa fa-play"></i>';
+                }
+              });
+            };
+          </script>
+
+
+</head>
+<body class="bg-black" id="page-top">
+
+ 
+<!--Navigator-->
+<div class="row fixed-top">
+  <div class="col">
+    <a href="#page-top">
+      <img class="img-fluid" src="media/moremo-guarda.jpg" alt="">
+
+    </a>
+  </div>
+</div>
+
+<!--Container Negro para hacer espacio-->
+
+<div class="container d-flex text-center align-content-center bg-black mt-4">
+</div>
+
+
+<!--Fondo Logo-->
+
+<img class="img-fluid img-responsive d-flex text-center align-content-center bg-black mt-5 mx-auto" src="media/fondo.jpg" alt="">
+
+
+
+
+ <!-- Cuenta Regresiva-->
+
+ <div class="countdown text-center display-4 mt-1 text-white mx-auto bg-black"  id="countdown"></div>
+              
+ <!-- Cuenta Regresiva SCRIPT-->
+
+<script>
+var countDownDate = new Date("apr 8, 2023 21:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
++ minutes + "m " + seconds + "s ";
+if (distance < 0) {
+  clearInterval(x);
+  document.getElementById("countdown").innerHTML = "Ya empezo!";
+}
+}, 1000);
+
+
+</script>
+
+
+<!--Imagen HEADER 1-->
+
+<div class="row d-flex justify-content-center text-center">
+  <div class="col-12 ">
+    <img class="img-fluid img-responsive" src="media/texto1.jpg" alt="">
+  </div>
+</div>
+
+
+<!--Botones dentro del header-->
+
+<div class="d-flex align-content-center btn-group bg-black" role="group" >
+
+  <a class="btn btn-light m-1  rounded w-100 " href="#salon"id="te-cuento" >TE CUENTO MAS</a>
+
+  <button id="play-pause" class="btn btn-light m-1 rounded w-100">
+    <i class="fa fa-music"></i> 
+  </button> 
+
+</div>
+
+
+<!--Imagen Inicio Galeria Siendo Yo-->
+
+<!--Imagen Mensaje-->
+
+<div class="row d-flex justify-content-center text-center">
+  <div class="col-12 ">
+    <img class="img-fluid img-responsive d-flex text-center align-content-center bg-black mx-auto" src="media/siendoyo.jpg" alt="">
+  </div>
+</div>
+
+
+
+
+<!-- Inicio del carrusel -->
+
+<div id="carouselExampleIndicators" class="carousel slide mt-2 col-lg-6 mx-auto ">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+
+
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="media/1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/4.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/5.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/6.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/7.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/8.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/9.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/10.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/11.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Fin del carrusel -->
+
+<!-- Guarda Fin de Galeria -->
+
+<div class="row">
+  <div class="col">
+    <img class="img-fluid" src="media/guarda1.png" alt="">
+  </div>
+</div>
+
+
+
+<!--Imagen Mensaje-->
+
+<div class="row d-flex justify-content-center text-center">
+  <div class="col-12 ">
+    <img class="img-fluid img-responsive" src="media/mensaje.jpg" alt="">
+  </div>
+</div>
+
+
+
+
+<!-- MENSAJE TEXTO 
+
+<h1 class="text-center text-white">Mensaje</h1>
+
+<div class="row justify-content-center text-center text-white">
+  <div class="col-8" id="mensaje">
+    <p>Estoy muy feliz de que me acompañes en mi noche especial. 
+      <br>Gracias por compartir este momento tan significativo conmigo. 
+      <br>Espero que disfrutes de la fiesta tanto como yo.
+      <br>¡Vamos a divertirnos juntos y hacer de esta noche 
+      <br>un recuerdo inolvidable! 
+      <br><br>
+      <br><BR>Morena</p>
+        
+
+  </div>
+</div>
+
+-->
+
+
+
+  <!-- Guardas 
+
+<div class="row">
+  <div class="col">
+    <img class="img-fluid" src="media/guarda1.png" alt="">
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <img class="img-fluid" src="media/guarda2.png" alt="">
+  </div>
+</div>
+
+-->
+
+<!--Salon-->
+<div class="row">
+  <div class="col">
+    <a href="https://www.google.com.ar/maps/place/Serrano+69,+E3105+Diamante,+Entre+R%C3%ADos/@-32.0630614,-60.6378422,17z/data=!4m5!3m4!1s0x95b5cdaf3f8c62c3:0xc625f90f65acc962!8m2!3d-32.0630614!4d-60.6356535">
+      <img class="img-fluid" src="media/salon.jpg" alt="" id="salon">
+
+    </a>
+  </div>
+</div>
+
+<!--Ubicacion Icono
+
+<div class="row d-flex justify-content-center text-center" id="ubicacion">
+  <div class="col-4" >
+
+    <a href="https://www.google.com.ar/maps/place/Serrano+69,+E3105+Diamante,+Entre+R%C3%ADos/@-32.0630614,-60.6378422,17z/data=!4m5!3m4!1s0x95b5cdaf3f8c62c3:0xc625f90f65acc962!8m2!3d-32.0630614!4d-60.6356535">
+    
+        <img class="mx-auto" style="width: 4vh" src="media/ubicacion.png" alt="">      
+    </a>
+
+  </div>
+  <div class="col-4" >
+    <h5>Ubicación</h5>
+  </div>
+</div>
+-->
+
+   
+<!-- Rombo -->
+
+<div class="row d-flex justify-content-center text-center">
+  <div class="col-12 ">
+    <img class="img-fluid img-responsive" src="media/regalo.jpg" alt="">
+  </div>
+</div>
+
+
+
+<!-- Guarda 
+
+<div class="row">
+  <div class="col">
+    <img class="img-fluid" src="media/guarda1.png" alt="">
+  </div>
+</div>
+
+-->
+
+
+
+ <!-- Footer-->
+ <footer class="py-5 bg-black">
+  <div class="container px-5"><p class="m-0 text-center text-white small">
+      CopyRight 2023 <bR>Diseño Web - <a href="https://www.instagram.com/webinvitaciondigital/" 
+      target="_blank"> <img src="media/instagram.png" class="bg-white" style="width: 3vh;" alt=""> @webinvitaciondigital</a>
+  <bR>Diseño Gráfico - <a href="https://www.instagram.com/verourba1/" 
+  target="_blank"><img src="media/instagram.png" class="bg-white" style="width: 3vh;" alt="">@verourba1</a> </p></div>
+</footer>
+
+
+
+ </body>
